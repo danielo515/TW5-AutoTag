@@ -1,0 +1,11 @@
+created: 20150906171943938
+draft.of: New Tiddler
+draft.title: This tiddler is a test
+modified: 20150906172135558
+tags: 
+title: Draft of 'New Tiddler'
+type: text/vnd.tiddlywiki
+
+This tiddler is a test ready to be sabed. Please note that the tiddler does not have any tag right now. Once you save it, it will be tagged with one or more of the existing tags according to the tiddler's text.
+
+Please note that currently the plugin is CaseSensitive.
