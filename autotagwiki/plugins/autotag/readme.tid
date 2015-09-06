@@ -1,6 +1,0 @@
-title: $:/plugins/danielo515/autotag/readme
-
-This plugin tags tiddler automatically based on their content. It only adds tags that exists already on the wiki.
-The only way it can be deactivated is disabling or uninstalling it.
-
-Github: [[]]https://github.com/danielo515/TW5-AutoTag]]
