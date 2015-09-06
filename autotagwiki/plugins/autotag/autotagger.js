@@ -41,13 +41,13 @@ function autotag(changes){
                     /*If any of the tags is contained on the tiddler text, then create a new array to host the new set of tags*/
                     var newTags=[];
                         for(var i=0,x=allTags.length;i<x;i++){
-                            if( tiddler.text.indexOf(allTags[i]) !==-1 && tiddler.tags.indexOf(allTags[i]) ==-1 ){
+                            if( tiddler.text.indexOf(allTags[i]) !==-1 && ( tiddler.tags === undefined || tiddler.tags.indexOf(allTags[i]) ==-1 )){
                                 newTags.push(allTags[i]);
                             }
                         }
                     console.log(newTags);
                     cache[title]=true; // save the processed tiddler on the cache to avoid edit loops
-                    taggedTiddlers.push(new $tw.Tiddler(tiddler,{tags:newTags.concat(tiddler.tags)}));
+                    taggedTiddlers.push(new $tw.Tiddler(tiddler,{tags: tiddler.tags ? newTags.concat(tiddler.tags) : newTags })); //only concatenate if the source tiddler has tagsS
                 }
         }
         
